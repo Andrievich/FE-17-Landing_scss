@@ -1,0 +1,99 @@
+.slider__item {
+    display: flex;
+    @media (max-width: 770px) {
+        display: block;            
+    }
+    .slider__item-image {
+        width: 49%;
+        @media (max-width: 770px) {
+            width: 100%;            
+        }
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    .slider__item-discription {
+        width: 50%;
+        background-color: #5C3249;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 1024px) {
+            padding-top: 60px;
+            justify-content: flex-start;            
+        }
+        @media (max-width: 920px) {
+            padding-top: 0;
+            justify-content: center;            
+        }
+        @media (max-width: 770px) {
+            width: 100%;  
+            padding: 20px 15px 95px;          
+        }
+        .slider__discription__quote {
+            text-transform: capitalize;
+            width: 470px;
+            color: #FFFFFF;
+            font-family: 'Cardo', sans-serif;
+            font-size: 36px;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 49px;
+            margin-bottom: 18px;
+            @media (max-width: 1024px) {
+                width: 330px;
+                font-size: 24px;
+                line-height: 32px;             
+            }
+            @media (max-width: 770px) {
+               text-align: center;          
+            }
+        }
+        .slider__discription__autor {
+            width: 470px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font-family: 'Raleway', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            @media (max-width: 1024px) {
+                width: 330px;
+                font-size: 12px;             
+            }
+            @media (max-width: 770px) {
+                text-align: center;            
+            }
+        }
+    }
+}
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slider .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .slick-dots li{
+    margin: 22px 12.5px 0;
+}
+
+.slider .slick-dots button{
+    font-size: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #7E5D6F;
+}
+
+.slider .slick-dots li.slick-active button {
+    background-color: #7E5D6F;
+}

@@ -1,0 +1,85 @@
+.features {
+    padding: 116px 0;
+    @media (max-width: 1024px) {
+        padding: 80px 0;             
+    }
+    .features__wrapper {
+        #features__row1 {
+            margin-bottom: 88px;
+            @media (max-width: 1024px) {
+                margin-bottom: 50px;             
+            }
+            @media (max-width: 500px) {
+                margin-bottom: 0;              
+            }
+        }
+        .features__wrapper__row {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 -15px;
+            @media (max-width: 500px) {
+                flex-wrap: wrap;
+                justify-content: center;  
+                margin: -21px -15px;              
+            }
+            .features__column-cell {
+                width: 370px;
+                margin: 0 15px;
+                @media (max-width: 1024px) {
+                    width: 315px;                 
+                }
+                @media (max-width: 500px) {
+                    margin: 21px 15px;               
+                }
+                .features__column-image {
+                    overflow: hidden;
+                    height: 100px;
+                    width: 100px;  
+                    margin: 0 auto 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;  
+                    @media (max-width: 1024px) {
+                        height: 85px;
+                        width: 85px;
+                        margin: 0 auto 25px;
+                        img {
+                            width: 85px;
+                            height: 85px;
+                        }
+                    }     
+                }
+                .features__column-title {
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 24px;
+                    font-weight: 900;
+                    line-height: 72px;
+                    color: #2D3033;
+                    margin-bottom: 20px;
+                    @media (max-width: 1024px) {
+                        font-size: 18px;
+                        line-height: 60px; 
+                        margin-bottom: 4px;               
+                    }
+                    @media (max-width: 675px) { 
+                        line-height: normal;
+                        height: 50px;            
+                    }
+                    
+                }
+                .features__column-discription{
+                    text-align: center;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #6C7279;
+                    @media (max-width: 1024px) {
+                        font-size: 14px;              
+                    }
+                }
+            }
+        }
+    }
+}

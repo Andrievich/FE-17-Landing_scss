@@ -1,0 +1,144 @@
+.work__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2px;
+    @media (max-width: 500px) { 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .work__grid-cell {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            .work__cell-discription {
+                opacity: 0;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 67, 67, 0.8);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                transition: 0.6s ease;
+                h3 {
+                    text-transform: uppercase;
+                    margin: 0 auto 13px;
+                    font-family: 'Raleway', sans-serif;
+                    color: #FFFFFF;
+                    font-size: 24px;
+                    font-weight: 900;
+                    line-height: 40px;
+                    @media (max-width: 1024px) {
+                        font-size: 18px;             
+                    }
+                }
+                p {
+                    text-transform: capitalize;
+                    text-align: center;
+                    font-family: 'Raleway', sans-serif;
+                    color: #FFFFFF;
+                    font-size: 18px;
+                    font-weight: 400;
+                    @media (max-width: 1024px) {
+                        font-size: 14px;;             
+                    }
+                }
+            }
+            .work__cell-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 103%;
+                    height: 103%;
+
+                }
+            }
+        }
+        a:hover .work__cell-discription {
+            opacity: 1;
+        }
+        .work__cell-discription:active {
+            background-color: rgba(185, 12, 12, 0.8);
+            transition: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+// .work__grid {
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     grid-template-rows: repeat(2, 1fr);
+//     grid-gap: 2px;
+//     .work__grid-item {
+//         overflow: hidden;
+//         width: 100%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         position: relative;
+//         a {
+//             .work__grid-discription {
+            
+//                 // overflow: hidden;
+//                 background-color: rgba(255, 67, 67, 0.8);
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: center;
+//                 width: 100%;
+//                 height: 100%;
+//                 position: absolute;
+//                 left: 0;
+//                 top: 0;
+//                 // z-index: 2;
+//                 opacity: 0;
+            
+//                     h3 {
+//                     text-transform: uppercase;
+//                     margin: 0 auto 13px;
+//                     font-family: 'Raleway', sans-serif;
+//                     color: #FFFFFF;
+//                     font-size: 18px;
+//                     font-weight: 900;
+//                     line-height: 40px;
+                    
+//                     }
+//                     p {
+//                     text-align: center;
+//                     font-family: 'Raleway', sans-serif;
+//                     color: #FFFFFF;
+//                     font-size: 14px;
+//                     font-weight: 400;
+                    
+//                     }
+//             }
+//             img {
+//                 width: 103%;
+//                 height: 103%;
+//             }
+//         }    
+//     }
+    
+//     .work__grid-item:hover .work__grid-discription {
+//         opacity: 1;
+//     }
+    
+// }
+
+
