@@ -1,6 +1,6 @@
 .header {
   padding: 0 0 120px;
-  background-image: url("/img/background.png");
+  background-image: url("../background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
